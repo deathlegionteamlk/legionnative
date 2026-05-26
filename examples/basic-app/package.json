@@ -1,0 +1,24 @@
+{
+  "name": "legion-example-basic",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Basic example app for LEGION Native - DEMO X HEXA × Death Legion Team",
+  "scripts": {
+    "start": "legion start",
+    "build": "legion build web",
+    "dev": "legion start --port 3000",
+    "build:android": "legion build android --release",
+    "build:ios": "legion build ios --release"
+  },
+  "dependencies": {
+    "@legion/runtime": "^0.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@legion/cli": "^0.1.0",
+    "typescript": "^5.3.0"
+  },
+  "author": "DEMO X HEXA × Death Legion Team",
+  "license": "MIT"
+}

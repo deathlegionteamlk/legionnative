@@ -1,0 +1,41 @@
+{
+  "name": "legion-native",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LEGION Native - A modern cross-platform mobile framework",
+  "keywords": [
+    "mobile",
+    "framework",
+    "cross-platform",
+    "react-native",
+    "expo",
+    "typescript",
+    "rust",
+    "wasm"
+  ],
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "packageManager": "npm@10.0.0"
+}
